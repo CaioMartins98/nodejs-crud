@@ -1,0 +1,27 @@
+POST http://localhost:3333/todo
+Content-type: application/json
+
+{
+    "title":"Cardio", 
+    "completed":false
+}
+
+###
+
+GET http://localhost:3333/todos
+
+###
+
+PUT http://localhost:3333/todo/25
+Content-type: application/json
+
+{
+    "title":"Cardio", 
+    "completed":true
+}
+
+###
+
+DELETE  http://localhost:3333/todo/NaN
+Content-type: application/json
+
